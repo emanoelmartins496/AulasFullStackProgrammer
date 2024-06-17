@@ -6,6 +6,15 @@
 
 .section1 {
     width: 400px;
-    background-color: blueviolet;
     margin: 16px auto;
+}
+
+/* 
+    Box Shadow
+    box-shadow: x y desfoque spread color
+*/
+
+.figura1 {
+    height: 150px;
+    box-shadow: 5px 10px 10px 10px black;
 }
