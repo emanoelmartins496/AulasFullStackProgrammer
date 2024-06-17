@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
+header {
+    background-color: #020c97;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffffb9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.2rem;
+}
+
+aside {
+    margin-top: 20px;
+}
+
+aside h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+aside nav a {
+    color: #3366cc;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #020c97;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #3366cc; 
+}
+
+th, td {
+    border: 2px solid #3366cc;
+    padding: 8px;
+    text-align: left;
+}
+
+.topo-da-pagina a {
+    color: #020c97;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Hotel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/fundo.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 0px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 10px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #479efc; 
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #479efc; 
+        }
+
+        small {
+            display: block;
+            margin-top: 1px;
+            color: #e00000;
+        }
+    </style>
+    <script>
+        function mostrarInformacoesQuarto() {
+            var tipoQuarto = document.getElementById("quarto").value;
+            var informacoesQuarto = "";
+
+            switch (tipoQuarto) {
+                case "standard":
+                    informacoesQuarto = "O quarto Standard oferece uma acomodação confortável com comodidades básicas.";
+                    break;
+                case "luxo":
+                    informacoesQuarto = "O quarto de Luxo oferece uma experiência premium com vistas panorâmicas e comodidades de luxo.";
+                    break;
+                case "suíte":
+                    informacoesQuarto = "A Suíte é a escolha perfeita para uma estadia luxuosa, com áreas espaçosas e comodidades exclusivas.";
+                    break;
+                default:
+                    informacoesQuarto = "";
+            }
+
+            document.getElementById("info-quarto").innerText = informacoesQuarto;
+        }
+    </script>
+</head>
+<body>
+    <h2>FAÇA SUA RESERVA AQUI</h2>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@example.com" required>
+
+        <label for="checkin">Data de Check-in</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Data de Check-out</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <label for="quarto">Tipo de Quarto</label>
+        <select id="quarto" name="quarto" onchange="mostrarInformacoesQuarto()" required>
+            <option value="" disabled selected>Selecione o tipo de quarto</option>
+            <option value="standard">Standard</option>
+            <option value="luxo">Luxo</option>
+            <option value="suíte">Suíte</option>
+        </select>
+
+        <small id="info-quarto"></small>
+
+        <label for="comentarios">Comentários adicionais</label>
+        <textarea id="comentarios" name="comentarios" placeholder="Adicione aqui quaisquer comentários adicionais"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

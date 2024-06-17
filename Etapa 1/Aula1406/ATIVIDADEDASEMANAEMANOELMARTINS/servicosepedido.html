@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Serviços</title>
+    <link rel="stylesheet" href="servico.css">
+</head>
+<body>
+
+    <header>
+        <h1>Confira nossos serviços e valores</h1>
+    </header>
+
+    <main>
+        <section class="servicos">
+            <h2>NOSSOS SERVIÇOS E VALORES</h2>
+            <ul>
+                <li>Desenvolvimento de Websites - A Partir de R$75,99/h</li>
+                <li>Desenvolvimento de Aplicativos Móveis - A Partir de R$97,99/h</li>
+                <li>Design de Interfaces de Usuário (UI) - A Partir de R$45,99/h</li>
+                <li>Desenvolvimento de Sistemas Web - A Partir de R$59,99/h</li>
+                <li>Manutenção e Suporte Técnico - A Partir de R$34,99/h</li>
+            </ul>
+        </section>
+
+        <aside>
+            <h2>FAÇA SEU CADASTRO E PEDIDO</h2>
+            <form>
+                <section>
+                    <article>
+                        <label for="cNome">Nome</label>
+                    </article>
+                    <input type="text" id="cNome" name="nome" placeholder="Nome Completo" required>
+                </section>
+            
+                <section>
+                    <article>
+                        <label for="cEmail">Email</label>
+                    </article>
+                    <input type="email" id="cEmail" name="email" placeholder="seuemail@email.com" required>
+                </section>
+                
+                <section>
+                    <article>
+                        <label for="cTelefone">Telefone</label>
+                    </article>
+                    <input type="tel" id="cTelefone" name="Telefone" placeholder="Seu telefone aqui" required> 
+                </section>
+                
+                <section>
+                    <article>
+                        <label for="cDescricao">Descreva o serviço desejado:</label>
+                    </article>
+                    <textarea name="descrição" id="cDescricao" placeholder="Digite aqui detalhadamente como você deseja seu projeto"></textarea>
+                </section>
+                
+                <section>
+                    <article>
+                        <label for="cArquivo">Arquivo:</label>
+                    </article>
+                    <input type="file" id="cArquivo" accept=".pdf"><br>
+                    <small>(Extensão suportada: pdf)</small>
+                </section>
+                
+                <section>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                    <button type="button">Ajuda?</button>
+                </section>
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <nav class="topo-da-pagina">
+            <a href="index.html">Página Inicial</a>
+        </nav>
+        <p>&copy; 2024 Empresa Exemplo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Enquete</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/enquete.png');
+            background-size: center;
+            background-position: center;
+            color: #333333;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 60px;
+            color: #000000; 
+            border-bottom: 2px solid #000000; 
+            padding-bottom: 10px; 
+            width: 50%; 
+            margin: 0 auto; 
+        }
+
+        form {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        input[type="text"],
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #007bff; 
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+    <h2>ENQUETE</h2>
+    <form>
+        <label for="pergunta">Pergunta da Enquete</label>
+        <input type="text" id="pergunta" name="pergunta" placeholder="Digite sua pergunta" required>
+
+        <label>Opções de Resposta:</label>
+        <div>
+            <input type="radio" id="opcao1" name="resposta" value="opcao1" required>
+            <label for="opcao1">Opção 1</label>
+        </div>
+        <div>
+            <input type="radio" id="opcao2" name="resposta" value="opcao2" required>
+            <label for="opcao2">Opção 2</label>
+        </div>
+        <div>
+            <input type="radio" id="opcao3" name="resposta" value="opcao3" required>
+            <label for="opcao3">Opção 3</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

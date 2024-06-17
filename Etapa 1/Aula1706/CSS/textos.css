@@ -1,0 +1,65 @@
+/* Especifidade 
+  1. Seletor de ID
+  2. Seletor de classe
+  3. Seletor de elemento
+  4. Seletor universal
+  5. Seletor de atributo
+  6. Seletor de pseudo-classe
+  7. Seletor de pseudo-elemento
+  8. Regras de estilo inline
+  9. Regras de estilo em um bloco <style> dentro do <body>
+  10. Regras de estilo em um bloco <style> dentro do <head>
+  11. Regras de estilo em um arquivo externo
+
+*/
+
+html {
+    font-size: 10px;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    font-weight: 700; /*Thin - Black*/
+    text-decoration: none;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: brown;
+    font-size: 2rem;
+}
+
+/*
+    - Unidades absolutas (px, cm, pt, etc);
+    - Unidades relativas 
+     vh -> viewport height (altura da tela)
+     vw -> viewpot widht (largura da tela)
+     rem -> Relativo ao elemento raiz
+     % ->Relativo ao elemento pai
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quadrado1 {
+    background-color: royalblue;
+    width: 150px;
+    height: 150px;
+}
+
+.quadrado2 {
+    background-color: chartreuse;
+    width: 50vw;
+    height: 20vh;
+}
+
+.quadrado3 {
+    background-color: rgb(145, 135, 0);
+    width: 60%;
+    height: 40%;
+} 
+
+.quadrado4 {
+    background-color: violet;
+    height: 100vh;
+    width: 300px;
+}

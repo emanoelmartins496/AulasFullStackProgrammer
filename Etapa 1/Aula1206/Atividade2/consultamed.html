@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento Médico</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/medic.avif') no-repeat center center fixed;
+            background-size: center;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 0px;
+            color: #ff0000;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #ff0000;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #ff0000; 
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #ffc400; 
+        }
+
+        small {
+            display: block;
+            margin-top: 5px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h2>AGENDE AQUI SUA CONSULTA</h2>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@example.com" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+        <label for="data_consulta">Data da Consulta</label>
+        <input type="date" id="data_consulta" name="data_consulta" required>
+
+        <label for="tipo_consulta">Tipo de Consulta</label>
+        <select id="tipo_consulta" name="tipo_consulta" required>
+            <option value="" disabled selected>Selecione o tipo de consulta</option>
+            <option value="check-up">Check-up</option>
+            <option value="tratamento">Tratamento</option>
+            <option value="consulta geral">Consulta Geral</option>
+        </select>
+
+        <label for="comentarios">Comentários adicionais</label>
+        <textarea id="comentarios" name="comentarios" placeholder="Adicione aqui quaisquer comentários adicionais"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

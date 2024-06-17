@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>Cadastro de Usuário</title>
+    </head>
+
+    <body>
+        <h2>Cadastro</h2>
+        <!--
+            <form> -> Conteiner do formulário
+            <input>, <textarea>, <select> -> Campos do formulário
+            <label. -> Rótulo dos Campos
+        -->
+        <form>
+            <!-- O atributo "for" vincula o campo e o rótulo -->
+                <label for="cNome">Nome</label>
+            <div>
+                <input type="text" id="cNome" name="nome"
+                placeholder="Nome Completo" required>
+            </div>
+
+                 <label for="cEmail">Email</label>
+            <div> 
+                <input type="email" id="cEmail" name="email"
+                placeholder="seuemail@email.com" required> 
+            </div>
+
+               <label for="cSenha">Senha</label> 
+            <div>
+                <input type="password" minlength="8" id="cSenha" name="Senha"
+                placeholder="Sua senha aqui" required> 
+            </div>
+                
+                <label for="cTelefone">Telefone</label> 
+            <div>
+                <input type="tel" id="cTelefone" name="Telefone"
+                placeholder="Seu telefone aqui" required>
+            </div>
+
+                 <label for="cInstagram">Instagram</label>
+            <div> 
+                <input type="url" id="cInstagram" name="Instagram"
+                placeholder="www.instagram.com/seu-perfil" required>
+            </div>
+
+            
+                <label for="cLinkedin">Linkedin</label> 
+            <div>
+                <input type="url" id="cLinkedin" name="Linkedin"
+                placeholder="www.linkedin.com/seu-perfil" required>
+            </div>
+
+            
+               <label for="cIdade">Idade</label> 
+            <div>
+                <input type="number" min="0" max="120" id="cIdade" name="Idade"
+                placeholder="Sua idade aqui" required >
+            </div>
+
+                
+                <label for="cDatadenasc">Data de Nascimento: </label> 
+            <div>
+                <input type="date" min="1900-01-01" id="cDatadenasc"  required>
+            </div>
+
+                <br><label for="cFoto">Sua foto: </label> 
+            <div>
+                <input type="file" id="cFoto" accept=".pdf, .png"><br>
+                <small>(Extensão suportada: pdf e png)</small>
+            </div>
+
+                <br><label>Sua linguagem favorita: </label>
+            <div>
+                <input type="radio" id="html" name="linguagem">
+                <label for="html">HTML</label>
+                <input type="radio" id="css" name="linguagem">
+                <label for="css">CSS</label>
+                <input type="radio" id="js" name="linguagem">
+                <label for="js" required>JS</label>
+            </div>
+
+            <div>
+                <br><label>Fale um pouco sobre você: </label>
+            </div>
+
+            <div>
+                <textarea name="descrição" id="cDescricao" 
+                placeholder="Fale dos seus hobbies, etc"></textarea>    
+            </div>
+
+            <br><label>Escolaridade: </label>
+            <div>
+                <select name="Escolaridade" id="cEscolaridade">
+                    <option disabled selected>Selecione uma opção</option>
+                    <option>Ensino Fundamental Completo</option>
+                    <option>Ensino Médio Completo</option>
+                    <option>Ensino Superior Completo</option>
+                </select>
+            </div>
+
+            <br><div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+                <button type="button">Ajuda?</button>
+            </div>
+
+        </form>
+    </body>
+</html>
