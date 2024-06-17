@@ -16,5 +16,9 @@
 
 .figura1 {
     height: 150px;
-    box-shadow: 5px 10px 10px 10px black;
+    box-shadow: 5px 5px 5px 0 black;
+}
+
+p {
+    text-shadow: 1px 1px 1px black;
 }
