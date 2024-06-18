@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*Reset = diminuir as interferências dos navegadores*/
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     border: 0;
+}
+
+html {
+    /* Estas propriedades são herdadas pelos elementos da página */
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+body {
+    background-color: #121212;
+}
+
+.cabecalho {
+    height: 320px;
+    padding: 56px 24px; /*Seguindo a ordem. 1° número = vertcal - 2° Número = Horizontal*/
+    background: linear-gradient(0deg, #121212, transparent), url(../img/fundofitcode.avif); /*Imagem de fundo*/
+    background-repeat: no-repeat; /* serve para que a imagem não se repita*/
+    background-size: cover; /* serve para que force a imagem a se encaixar no local escolhido*/
+}
+
+.titulo {
+    font-size: 3.5rem;
+}
+
+.descricao {
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.btn {
+    background-color: transparent;
+    border: 4px solid #ccc;
+    color: #ccc;
+    border-radius: 8px; /*Arredondar a borda*/
+    padding: 16px 32px; /*Abrir as bordas = Largura*/
+    font-size: 1rem; /*cada 1 rem equivalem a 16px*/
+    font-family: "Inter", sans-serif;
+    margin: 6px 0;
+    cursor: pointer; /*Cria um efeito de "botão" mesmo*/
+}
+
+/*Hover aplica estilo quando o mouse passa no botão*/
+.btn:hover {
+    background-color: #ccc;
+    color: #121212;
+    transition: background-color 1s; /*Pequenas animações para mudar a propriedade*/
+}
+
+.newsletter {
+    width: 300px;
+    margin: auto;
+    padding: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+}
+
+.btn-w100 {
+    width: 100%;
+}
+
+.cronograma {
+    width: 800px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /*Para tirar a borda dupla*/
+}
+
+/* tr = linha / td= elementos / =th cabeçalho */
+td, th {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background-color: #ccc;
+    text-align: left;
+    color: #121212;
+    border-color: #121212;
+}
+
+.footer {
+    text-align: center;
+    color: #ccc;
+    border-color: #121212;
+    margin: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.contato-whatsapp {
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    position: fixed;
+    right: 16px;
+    bottom: 16px
+}
+
+.contato-whatsapp img {
+width: 100%;
+}
+
+.contato-whatsapp:hover {
+    filter: invert(1);
+}
