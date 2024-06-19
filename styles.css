@@ -1,0 +1,122 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #ccc; /* Cor do texto principal */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('../AulasFullStackProgrammer/Aulas-HTML-CSS-Etapa1/img/fundo.jpg') center/cover fixed;
+    z-index: -1;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: rgba(17, 17, 17, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+ul li a:hover {
+    background-color: rgba(0, 123, 255, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(20, 20, 22, 0.9);
+    color: #ccc;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .container, main, header, footer {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+    }
+}
