@@ -1,0 +1,21 @@
+/* exercício de mediaqueries */
+
+/* Mobile = Celular (0 - 480px) */
+@media (max-width: 480px) {
+
+}
+
+/* Tablet (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Laptops e Notebooks (769px - 1279px) */
+@media (min-width: 769px) and (max-width: 1279px) {
+
+}
+
+/* Desktop (1280px +) */
+@media (min-width: 1280px) {
+
+}

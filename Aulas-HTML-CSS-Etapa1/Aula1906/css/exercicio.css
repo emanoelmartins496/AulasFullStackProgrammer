@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #121212;
+}
+
+.cabecalho {
+    height: 320px;
+    padding: 56px 24px;
+    background: linear-gradient(0deg, #121212, transparent), url(../img/fundofitcode.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    font-size: 3.5rem;
+}
+
+.descricao {
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.btn {
+    background-color: transparent;
+    border: 4px solid #ccc;
+    color: #ccc;
+    border-radius: 8px;
+    padding: 16px 32px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #121212;
+    transition: background-color 1s;
+}
+
+.newsletter {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-w100 {
+    width: 100%;
+}
+
+.cronograma {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow-x: auto; /* Esse botão é para que consiga mover a tabela sempre que não estiver espaço */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #ccc;
+    color: #121212;
+}
+
+.footer {
+    text-align: center;
+    color: #ccc;
+    margin: 15px;
+}
+
+.contato-whatsapp {
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+}
+
+.contato-whatsapp img {
+    width: 100%;
+}
+
+.contato-whatsapp:hover {
+    filter: invert(1);
+}
+
+/* Mobile (0 - 768px) */
+@media (max-width: 768px) {
+    .cronograma table {
+        font-size: 0.8rem;
+    }
+
+    .cronograma th,
+    .cronograma td {
+        padding: 6px;
+    }
+}
+
+/* Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cronograma table {
+        font-size: 0.9rem;
+    }
+}
