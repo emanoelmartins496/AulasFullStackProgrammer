@@ -36,16 +36,21 @@ html {
     color: yellow;
 }
 
-/* Media Query = regra especial */
-/* 
-    @media condicao {
-        // estilos a serem aplicados quando a condição for verdadeira
-    }
-*/
+@media (max-width> 480px) {
+    /* - Trocar a mavbar de row para column */
+    /* - Redfinir a altura da navbar*/
+    /* - Alinhar os elementos */
+    .navbar{
 
-/* Se a largura estiver no máximo 599px aplica-se o estilo */
-@media(max-width: 599px) {
-    body {
-        background-color: red;
+    }
+
+    /* - Ajustar a imagem */
+    .navbar img {
+
+    }
+
+    /* - row para column */
+    .nav-links {
+        
     }
 }
