@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #000000;
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.navbar img {
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+/* Media Query = regra especial */
+/* 
+    @media condicao {
+        // estilos a serem aplicados quando a condição for verdadeira
+    }
+*/
+
+/* Se a largura estiver no máximo 599px aplica-se o estilo */
+@media(max-width: 599px) {
+    body {
+        background-color: red;
+    }
+}
