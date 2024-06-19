@@ -22,7 +22,7 @@ body {
     height: 100%;
     background: 
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('../AulasFullStackProgrammer/fullstackprogrammer/img/fundo.jpg') center/cover fixed;
+        url(fullstackprogrammer/img/fundo.jpg) center/cover fixed;
     z-index: -1;
 }
 
