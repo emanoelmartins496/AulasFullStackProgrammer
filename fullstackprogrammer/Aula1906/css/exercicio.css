@@ -78,6 +78,7 @@ input {
 .cronograma {
     width: 100%;
     max-width: 800px;
+    padding: 12px;
     margin: auto;
     overflow-x: auto; /* Esse botão é para que consiga mover a tabela sempre que não estiver espaço */
 }
