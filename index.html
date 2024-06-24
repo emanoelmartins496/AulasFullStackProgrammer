@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Emanoel Programmer - Portfólio</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="background-image"></div>
@@ -16,7 +18,12 @@
     </header>
     <div class="background-image"></div>
     <main class="container">
-        <section>
+        <form class="search-form">
+            <input type="text" id="searchInput" placeholder="Pesquisar...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <section class="section" id="section1">
             <h2>Criações</h2>
             <ul>
                 <li><a href="fullstackprogrammer/nikel/home.html">Nikel</a></li>
@@ -25,7 +32,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="section" id="section2">
             <h2>Aulas de HTML e CSS</h2>
             <ul>
                 <li><a href="fullstackprogrammer/Aula1206/index.html">Aula 12.06 - HTML</a></li>
@@ -39,7 +46,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="section" id="section3">
             <h2>Aulas de Flexbox e Responsividade</h2>
             <ul>
                 <li><a href="fullstackprogrammer/Aula1806/lading-page.html">Aula 18.06 - Landing Page (SITE FITCODE)</a></li>

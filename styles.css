@@ -1,121 +1,147 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Estilos gerais */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #1a1a1a;
-    color: #ccc;
+    font-family: 'Montserrat', sans-serif; /* Fonte personalizada */
+    font-size: 16px; /* Tamanho base da fonte */
     margin: 0;
     padding: 0;
-    position: relative;
-}
-
-.background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url(img/fundo.jpg) center/cover fixed;
-    z-index: -1;
+    background-color: #1f2937; /* Azul escuro */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fundo.jpg'); /* Gradiente linear sobre a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Texto branco */
+    min-height: 100vh; /* Altura mínima da viewport */
+    position: relative; /* Para o sticky footer funcionar */
 }
 
 .container {
-    max-width: 960px;
+    width: 80%;
     margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header {
-    background-color: rgba(17, 17, 17, 0.9);
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo do cabeçalho com transparência */
+    color: #fff; /* Texto branco */
+    padding: 10px 0;
     text-align: center;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700; /* Negrito para o título principal */
 }
 
 header p {
-    font-size: 1.25rem;
+    font-size: 1.2em;
 }
 
 main {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Ocupa todo o espaço disponível */
+    padding: 20px 0;
 }
-
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    font-size: 2.5rem;
-    color: #007bff;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 8px;
-}
-
-ul li a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s;
-    display: block;
+.section {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo das seções com transparência */
+    border: 1px solid rgba(255, 255, 255, 0.26); /* Borda com transparência */
+    margin-bottom: 20px;
     padding: 10px;
-    border-radius: 4px;
-    background-color: rgba(0, 123, 255, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra mais definida */
 }
 
-ul li a:hover {
-    background-color: rgba(0, 123, 255, 0.3);
+.section h2 {
+    cursor: pointer;
+    font-size: 1.8em;
+    font-weight: 700; /* Negrito para os títulos das seções */
+    color: #fff; /* Texto branco */
+}
+
+.section ul {
+    display: none;
+}
+
+.section.open ul {
+    display: block;
+}
+
+.section h2::after {
+    content: "\25BC"; /* Ícone de seta para baixo */
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.section.open h2::after {
+    transform: rotate(180deg); /* Gira a seta para cima quando a seção está aberta */
 }
 
 footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo do rodapé com transparência */
+    color: #fff; /* Texto branco */
     text-align: center;
     padding: 10px 0;
-    background-color: rgba(20, 20, 22, 0.9);
-    color: #ccc;
-    border-radius: 8px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Sombra mais definida na parte inferior */
 }
 
-@media screen and (max-width: 768px) {
-    .container, main, header, footer {
-        padding: 10px;
+/* Estilos para a barra de pesquisa */
+
+/* Estilo para destacar o item encontrado */
+.highlight {
+    animation: highlight 1s infinite alternate;
+}
+
+@keyframes highlight {
+    from {
+        background-color: transparent;
     }
-    
-    header h1 {
-        font-size: 2.5rem;
+    to {
+        background-color: #0077ff50;
     }
-    
-    header p {
-        font-size: 1rem;
-    }
-    
-    section h2 {
-        font-size: 2rem;
-    }
+}
+
+
+.search-form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#searchInput {
+    padding: 12px;
+    width: 300px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo da barra de pesquisa com transparência */
+    color: #fff; /* Texto branco */
+    font-size: 1em;
+    border-radius: 25px; /* Borda arredondada */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Cor do placeholder com transparência */
+}
+
+.search-form button {
+    padding: 12px 24px;
+    border: none;
+    background-color: #ffffff; /* Azul mais claro */
+    color: #000000; /* Texto preto */
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 25px; /* Borda arredondada */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+.search-form button:hover {
+    background-color: #0077ff33; /* Azul mais escuro no hover */
+    color: #fff;
+}
+
+/* Estilo para links clicáveis */
+a {
+    color: #ffffff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: color 0.3s ease; /* Transição suave da cor */
+    font-size: 1.2rem; /* Tamanho da fonte aumentado */
+}
+
+a:hover {
+    color: #0077ff; /* Cor dos links no hover */
 }
