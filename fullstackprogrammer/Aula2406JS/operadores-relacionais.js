@@ -32,4 +32,3 @@ console.log(a === "3"); // false, possuem tipos diferentes
 // Estritamente diferente
 console.log(a != "3"); // false
 console.log(a !== "3"); // true, são diferentes em tipo
-
