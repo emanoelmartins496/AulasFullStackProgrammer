@@ -73,4 +73,6 @@ function calcularImc(peso, altura) {
 let imc1 = calcularImc(87, 1.78);
 let imc2 = calcularImc(50, 1.9);
 let imc3 = calcularImc(78, 1.75);
-console.log(imc1);
+
+let mediaImc = calcularMedia(imc1, imc2, imc3);
+console.log(mediaImc);
