@@ -1,0 +1,27 @@
+.card-aluno {
+  border: 1px solid rgb(4, 0, 255);
+  border-radius: 8px;
+  padding: 16px;
+  width: 250px;
+  margin: 16px;
+  transition: box-shadow 0.3s ease;
+  background-color: #76dbca;
+}
+
+.card-aluno:hover {
+  box-shadow: 0 8px 16px rgb(4, 0, 255);
+}
+
+.card-aluno h4 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+.card-aluno .aprovado {
+  color: #006603;
+}
+
+.card-aluno .reprovado {
+  color: #fd1100;
+}

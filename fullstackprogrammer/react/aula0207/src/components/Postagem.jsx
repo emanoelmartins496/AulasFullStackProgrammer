@@ -1,13 +1,12 @@
 import "./Postagem.css";
 
+// props => são os atributos que definimos no uso do Postagem
 function Postagem(props) {
-    console.log(props);
-
     return (
         <article className="postagem">
-            <h1>{props.titulo}</h1>
+            <h3>{props.titulo}</h3>
             <p>{props.desc}</p>
-            <img src={props.linkImagem} />
+            <img src={props.linkImagem} alt={props.legenda}/>
         </article>
     );
 }

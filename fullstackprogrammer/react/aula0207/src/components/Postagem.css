@@ -1,13 +1,6 @@
 .postagem {
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.postagem h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333333;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    width: 200px;
+    margin: 8px auto;
 }
