@@ -1,0 +1,54 @@
+.galeria {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 12.3px;
+  width: 200px;
+  margin-bottom: 20px;
+  border: 1px solid #001429;
+  border-radius: 8px;
+  box-shadow: 0 10px 3px #001429;
+  transition: transform 0.2s ease-in-out;
+}
+
+.galeria:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #001429;
+}
+
+.imagem {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.titulo {
+  font-size: 16px;
+  color: #001429;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.preco-original {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+.preco h4 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #001429;
+  font-weight: bold;
+}
+
+.desconto {
+  color: red;
+  font-weight: bold;
+}
+
+.descricao {
+  font-size: 14px;
+  color: #001429;
+}

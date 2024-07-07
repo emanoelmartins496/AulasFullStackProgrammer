@@ -1,4 +1,9 @@
-footer {
-    font-style: italic;
-    background-color: grey;
-}
+.rodape {
+    background-color: #01172e; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto do rodapé */
+    text-align: center; /* Alinhamento do texto */
+    padding: 10px; /* Espaçamento interno */
+    position: absolute; /* Posicionamento fixo */
+    left: 0; /* Alinhar à esquerda da janela */
+    width: 98.55%; /* Largura total */
+  }

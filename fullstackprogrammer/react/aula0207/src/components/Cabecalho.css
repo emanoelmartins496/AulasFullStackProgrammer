@@ -1,0 +1,46 @@
+/* Cabecalho.css */
+
+.cabecalho {
+    background-color: #01162c;
+    color: #ffffff; 
+    height: 80px;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cabecalho h1 {
+    margin: 0; 
+    font-size: 24px;
+  }
+  
+  .cabecalho nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cabecalho nav ul li {
+    margin: 0 10px;
+  }
+  
+  .cabecalho nav ul li a {
+    text-decoration: none; 
+    color: #01172e; 
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s, transform 0.3s ease;
+  }
+  
+  .cabecalho nav ul li a:hover {
+    color: #33333370; 
+    transform: translateY(-3px);
+  }
+  
+  .cabecalho nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
