@@ -1,0 +1,13 @@
+/* Estilo para os botões */
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .ativo {
+    background-color: #a03402;
+    color: #ffffff;
+  }
+
+  

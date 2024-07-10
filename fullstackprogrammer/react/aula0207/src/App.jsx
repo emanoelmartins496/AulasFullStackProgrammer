@@ -12,7 +12,12 @@ import Mensagem from "./components/Mensagem";
 import CardAluno from "./components/CardAluno";
 import Galeria from "./components/Galeria";
 import Listagem from "./components/Listagem";
-
+import Eventos from "./components/Eventos";
+import Contador from "./components/Contador";
+import Abas from "./components/Abas"
+import Carrossel from "./components/Carrossel";
+import CalculadoraIMC from "./components/CalculadoraIMC";
+import Post from "./components/Post";
 
 
 // Componente principal da aplicação
@@ -41,7 +46,7 @@ function App() {
 
       {/* <Listagem /> */}
 
-      <Cabecalho 
+      {/* <Cabecalho 
         logado={true} 
         nomeUsuario="Cliente"
       />
@@ -149,10 +154,26 @@ function App() {
         tecnológicos atuais e futuros." 
       />
 
-      <Rodape />
+      <Rodape /> */}
+
+      {/* <Eventos /> */}
+
+      {/* <Contador valorInicial={20}/>
+      <Contador valorInicial={1000}/>
+      <Contador valorInicial={250}/>
+      <Contador/> */}
+
+      {/* <Abas /> */}
+
+      {/* <Carrossel/> */}
+
+      {/* <CalculadoraIMC /> */}
+
+      <Post />
 
     </>
   );
 }
 
 export default App;
+

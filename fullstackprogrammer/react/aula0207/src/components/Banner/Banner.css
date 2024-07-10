@@ -1,4 +1,4 @@
-section {
+.banner-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@ section {
     margin-top: 80px;
 }
 
-section img {
+.banner-section img {
     width: 15%;
     margin-bottom: 5px;
 }

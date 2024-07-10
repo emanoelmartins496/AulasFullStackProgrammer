@@ -1,0 +1,40 @@
+.post {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.post .descricao {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.post .botoes {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post .botoes:hover {
+    background-color: #0056b3;
+}
+
+.post .mensagem {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
