@@ -36,7 +36,7 @@ function Ajuda() {
                     </Button>
 
                     <Alert 
-                    classeName="mt-1"
+                    className="mt-1"
                     variant="warning">Atenção, estamos em manutenção!
                     </Alert>
             </Container>

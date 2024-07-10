@@ -1,0 +1,36 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cards .card {
+    width: 18rem;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cards .card:hover {
+    transform: translateY(-5px);
+}
+
+.cards .card img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cards .card-body {
+    padding: 1rem;
+}
+
+.botao-card {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
