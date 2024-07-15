@@ -1,3 +1,0 @@
-comando padrão para criar a pasta do projeto react = npm create vite@latest meuprojeto -- --template react
-
-comando padrão para criar os arquivos do react = npm install react-router-dom
