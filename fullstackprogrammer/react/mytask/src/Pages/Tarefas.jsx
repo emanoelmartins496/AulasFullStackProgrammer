@@ -12,11 +12,11 @@ function Tarefas() {
 
   //Recuperamos as informações do usuário logado
   const usuario = useContext(UsuarioContext);
-  
+
   const navigate = useNavigate();
 
   function carregarDados() {
-    if(usuario) {
+    if (usuario) {
       // O then devolve a lista de tarefas da coleção
       getTarefasUsuario(usuario.uid).then((resultados) => {
         setTarefas(resultados);
@@ -27,7 +27,7 @@ function Tarefas() {
   function deletarTarefa(id) {
     // true -> apagar a tarefa, false -> não fazer nada
     const deletar = confirm("Tem certeza ?");
-    if(deletar) {
+    if (deletar) {
       deleteTarefa(id).then(() => {
         toast.success("Tarefa removida com sucesso");
         // Trazer a lista de tarefas atualizada
@@ -42,10 +42,8 @@ function Tarefas() {
     carregarDados();
   }, []);
 
-  if(usuario === null) {
-
+  if (usuario === null) {
     return <Navigate to="/login" />;
-
   }
 
   return (
@@ -71,11 +69,22 @@ function Tarefas() {
                         <Badge bg="warning">Pendente</Badge>
                       )}
                       <Badge bg="dark">{tarefa.categoria}</Badge>
+                      <Badge bg="success">
+                        {new Date(tarefa.dataConclusao).toLocaleDateString()}
+                      </Badge>
                     </div>
-                    <Button variant="dark" onClick={() => {
-                      navigate(`/tarefas/editar/${tarefa.id}`);
-                    }}>Editar</Button>
-                    <Button variant="danger" onClick={() => deletarTarefa(tarefa.id)}>
+                    <Button
+                      variant="dark"
+                      onClick={() => {
+                        navigate(`/tarefas/editar/${tarefa.id}`);
+                      }}
+                    >
+                      Editar
+                    </Button>
+                    <Button
+                      variant="danger"
+                      onClick={() => deletarTarefa(tarefa.id)}
+                    >
                       Excluir
                     </Button>
                   </Card.Body>
