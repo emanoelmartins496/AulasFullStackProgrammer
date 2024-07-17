@@ -20,13 +20,20 @@ import { UsuarioContext } from "./contexts/UsuarioContexts";
 
 function App() {
   const [usuarioLogado, setUsuarioLogado] = useState(null);
+  //resolve o problema de carregar a tela do login quando atualiza (linhas 24, 30, 34, 35 e 36)
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() =>{
     //essa função monitora/detecta o usuário conectado
     onAuthStateChanged(auth, (user) => {
       setUsuarioLogado(user);
+      setLoading(false);
     })
   }, []);
+
+  if(loading) {
+    return null;
+  }
 
   return (
     <>
