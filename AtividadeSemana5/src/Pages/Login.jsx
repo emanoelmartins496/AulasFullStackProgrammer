@@ -46,7 +46,7 @@ function Login() {
             <small className="invalid">{errors.senha.message}</small>
           )}
         </div>
-        <Button variant="dark" className="mt-1 w-100" type="submit">
+        <Button variant="info" className="mt-1 w-100" type="submit">
           Entrar
         </Button>
         <Button variant="danger" className="mt-1 w-100" type="button">

@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCq2I2lQ8eS7WkGdc1sO0qye7nl_qm2FUU",
-  authDomain: "my-task-e7a66.firebaseapp.com",
-  projectId: "my-task-e7a66",
-  storageBucket: "my-task-e7a66.appspot.com",
-  messagingSenderId: "233156629415",
-  appId: "1:233156629415:web:14e58adfcd965cda9c9c82"
+  apiKey: "AIzaSyAOew_DT7nU-d8lv0-LgWiyPT4WiOU9ihA",
+  authDomain: "my-task-91afb.firebaseapp.com",
+  projectId: "my-task-91afb",
+  storageBucket: "my-task-91afb.appspot.com",
+  messagingSenderId: "869299172238",
+  appId: "1:869299172238:web:5191511342c79ec00beadf"
 };
 
 // app => objeto com todas as configurações do firebase

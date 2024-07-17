@@ -2,7 +2,7 @@ import Menu from "./Components/Menu";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Cadastro from "./Pages/Cadastro";
-import Ajuda from "./Pages/Ajuda";
+import Contato from "./Pages/Contato";
 import Politicas from "./Pages/Politicas";
 import NotFound from "./Pages/NotFound";
 import Rodape from "./Components/Rodape";
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
-          <Route path="/ajuda" element={<Ajuda />} />
+          <Route path="/contato" element={<Contato />} />
           <Route path="/politicas" element={<Politicas />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

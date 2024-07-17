@@ -1,9 +1,21 @@
-comando padrão para criar a pasta do projeto react = npm create vite@latest AtividadeSemana5 -- --template react
+Comandos de instalação:
 
-comando padrão para criar os arquivos do react = npm install react-router-dom
-
+Rotas:
 
 npm install react-router-dom
+
+Formulários:
+
 npm install react-hook-form
+
+Bootstrap:
+
 npm install react-bootstrap bootstrap
+
+Google firebase:
+
 npm install firebase
+
+Alertas automáticos
+
+npm install react-hot-toast

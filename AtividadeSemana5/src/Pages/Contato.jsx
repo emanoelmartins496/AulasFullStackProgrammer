@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
-function Cadastro() {
+function Contato() {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   function cadastrar(data) {
@@ -34,43 +34,20 @@ function Cadastro() {
             />
             {errors.email && <small className="invalid">O email é inválido!</small>}
         </div>
-
         <div>
-          <label htmlFor="datadenascimento">Data de Nascimento</label>
+          <label htmlFor="Feedback">Feedback</label>
           <input 
-            type="datadenascimento" 
-            id="datadenascimento" 
             className="form-control" 
-            {...register("datadenascimento", { required: true })}
+            {...register("feedback", {required: true, minLength: 500})}
             />
-            {errors.datadenascimento && <small className="invalid">A data de nascimento é obrigatória!</small>}
+            {errors.feedback && <small className="invalid">O feedback deve ter pelo menos 500 caracteres!</small>}
         </div>
-
-        <div>
-          <label htmlFor="senha">Senha</label>
-          <input 
-            type="password" 
-            id="senha" 
-            className="form-control" 
-            {...register("senha", {required: true, minLength: 6})}
-            />
-            {errors.senha && <small className="invalid">A senha é inválida!</small>}
-        </div>
-        <div className="form-check mt-1">
-        <input className="form-check-input" type="checkbox" id="autoSizingCheck2"/>
-          <label className="form-check-label" for="autoSizingCheck2">
-            Lembrar de mim
-          </label>
-        </div>
-        <Button variant="info" className="mt-1 w-100" type="submit">
-          Cadastrar
-        </Button>
-        <Button variant="danger" className="mt-1 w-100" type="button">
-          Cadastrar com o Google
+        <Button variant="dark" className="mt-1 w-100" type="submit">
+          ENVIAR
         </Button>
       </form>
     </main>
   );
 }
 
-export default Cadastro;
+export default Contato;

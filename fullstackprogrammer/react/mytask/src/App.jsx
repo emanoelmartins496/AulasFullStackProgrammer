@@ -7,6 +7,7 @@ import Politicas from "./Pages/Politicas";
 import NotFound from "./Pages/NotFound";
 import Rodape from "./Components/Rodape";
 import Tarefas from "./Pages/Tarefas";
+import EditarTarefa from "./Pages/EditarTarefa";
 import NovaTarefa from "./Pages/NovaTarefa";
 import {Toaster} from "react-hot-toast";
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/ajuda" element={<Ajuda />} />
           <Route path="politicas" element={<Politicas />} />
           <Route path="/tarefas" element={<Tarefas/>}/>
+          <Route path="/tarefas/editar/:id" element={<EditarTarefa/>}/>
           <Route path="/tarefas/adicionar" element={<NovaTarefa />}/>
           <Route path="*" element={<NotFound />} />
           
