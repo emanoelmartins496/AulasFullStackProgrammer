@@ -1,10 +1,12 @@
+
 import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Navigate } from "react-router-dom";
 import { getTarefa, updateTarefa } from "../firebase/tarefas";
 import { useEffect } from "react";
-
+import { useContext } from "react";
+import { UsuarioContext } from "../contexts/UsuarioContexts";
 function EditarTarefa() {
   // Extrair o ID na rota dinâmica
   const { id } = useParams();
@@ -15,6 +17,8 @@ function EditarTarefa() {
     formState: { errors },
     reset
   } = useForm();
+
+  const usuario = useContext(UsuarioContext);
 
   const navigate = useNavigate();
 
@@ -29,6 +33,7 @@ function EditarTarefa() {
     });
   }
 
+
   function atualizarTarefa(data) {
     updateTarefa(id, data).then(() => {
       toast.success("Tarefa atualizada com sucesso");
@@ -39,6 +44,12 @@ function EditarTarefa() {
   useEffect(() => {
     carregarDado();
   }, []);
+
+  if(usuario === null) {
+
+    return <Navigate to="/login" />;
+
+  }
 
   return (
     <main>

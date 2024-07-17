@@ -3,13 +3,14 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAOew_DT7nU-d8lv0-LgWiyPT4WiOU9ihA",
-  authDomain: "my-task-91afb.firebaseapp.com",
-  projectId: "my-task-91afb",
-  storageBucket: "my-task-91afb.appspot.com",
-  messagingSenderId: "869299172238",
-  appId: "1:869299172238:web:5191511342c79ec00beadf"
+  apiKey: "AIzaSyDptbm5EpJPxZxwcbjPE14RdNfmCe1dk6A",
+  authDomain: "react-project-89920.firebaseapp.com",
+  projectId: "react-project-89920",
+  storageBucket: "react-project-89920.appspot.com",
+  messagingSenderId: "1040603854833",
+  appId: "1:1040603854833:web:1451f064ad6755c2f6f650"
 };
+
 
 // app => objeto com todas as configurações do firebase
 export const app = initializeApp(firebaseConfig);
