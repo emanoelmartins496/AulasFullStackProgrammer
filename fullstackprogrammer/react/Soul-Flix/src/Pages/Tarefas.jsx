@@ -49,7 +49,7 @@ function Tarefas() {
 
   return (
     <main>
-      <Container className="mt-5">
+      <Container className="mt-5 my-5">
         <h1>Suas tarefas</h1>
         <hr />
         <Link className="btn btn-dark" to="/tarefas/adicionar">

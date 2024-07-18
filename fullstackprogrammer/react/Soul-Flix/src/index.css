@@ -1,0 +1,10 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.form-section {
+    width: 320px;
+    margin: 16px auto;
+}
+
+main {
+    min-height: calc(100vh - 112px);
+}
