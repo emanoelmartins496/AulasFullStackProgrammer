@@ -1,14 +1,14 @@
 import { Accordion, Badge, Button, Card, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { deleteTarefa, getTarefasUsuario } from "../firebase/tarefas";
+import { deleteFilmes, getFilmessUsuario } from "../firebase/filmes";
 import { useContext, useEffect, useState } from "react";
 import Loader from "../Components/Loader";
 import toast from "react-hot-toast";
 import { useNavigate, Navigate } from "react-router-dom";
 import { UsuarioContext } from "../contexts/UsuarioContexts";
 
-function Tarefas() {
-  const [tarefas, setTarefas] = useState(null);
+function Filmes() {
+  const [filmes, setTarefas] = useState(null);
   // Recuperamos a informação do usuário (se está logado ou não)
   const usuario = useContext(UsuarioContext);
 
@@ -98,4 +98,4 @@ function Tarefas() {
   );
 }
 
-export default Tarefas;
+export default Filmes;

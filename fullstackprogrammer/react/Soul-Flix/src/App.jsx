@@ -5,9 +5,9 @@ import Ajuda from "./Pages/Ajuda";
 import Politicas from "./Pages/Politicas";
 import NotFound from "./Pages/NotFound";
 import Rodape from "./Components/Rodape";
-import Tarefas from "./Pages/Tarefas";
+import Filmes from "./Pages/Filmes";
 import EditarTarefa from "./Pages/EditarTarefa";
-import NovaTarefa from "./Pages/NovaTarefa";
+import EditarFilme from "./Pages/EditarFilme";
 import {Toaster} from "react-hot-toast";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -44,7 +44,7 @@ function App() {
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/ajuda" element={<Ajuda />} />
             <Route path="/tarefas" element={<Tarefas />} />
-            <Route path="/tarefas/adicionar" element={<NovaTarefa />} />
+            <Route path="/editarfilme/adicionar" element={<EditarFilme />} />
             <Route path="/tarefas/editar/:id" element={<EditarTarefa/>}/>
           </Routes>
           <Rodape />
