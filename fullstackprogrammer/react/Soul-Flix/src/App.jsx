@@ -10,6 +10,7 @@ import { useState, useEffect } from "react"
 import { onAuthStateChanged } from "firebase/auth"
 import { auth } from "./firebase/config"
 import Rodape from "./Components/Rodape"
+import Header from "./Components/header/Header"
 
 
 function App() {
@@ -34,13 +35,13 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Login/>} />
+            <Route path="/login" element={<Login/>} />
             <Route path="/cadastro" element={<Cadastro/>} />
             <Route path="/filmes" element={<Filmes/>} />
             <Route path="/filmes/editar/:id" element={<EditarFilme/>} />
             <Route path="/filmes/adicionarfilmes" element={<AdicionarNovoFilme/>} />
             <Route path="*" element={<NotFound/>} />
           </Routes>
-          <Rodape></Rodape>
         </BrowserRouter>
       </UsuarioContext.Provider>
     </>

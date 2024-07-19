@@ -4,7 +4,7 @@ function CardFilme({ titulo, descricao, assistido, genero, id, deletarFilmes }){
   return (
     <Col xs={12} md={6} lg={4} className="mb-4">
         <Card  key={id}>
-            <Card.Img variant="top" src="https://placehold.co/200x200"/>
+            <Card.Img variant="top" src="/images/imagecard.png"/>
             <Card.Body>
                 <Card.Title>{titulo}</Card.Title>
                 <Card.Text>

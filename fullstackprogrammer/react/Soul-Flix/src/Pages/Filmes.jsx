@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import { UsuarioContext } from "../contexts/UsuarioContext"
 import Header from "../Components/header/Header"
 import CardFilme from "../Components/cardfilme/CardFilme"
-
+import Rodape from "../Components/Rodape"
 
 function Filmes(){
     const [ filmes, setFilmes]  = useState(null)
@@ -51,7 +51,7 @@ function Filmes(){
                 <hr />
                 <Link className="btn btn-dark" to="/filmes/adicionarfilmes">Adicionar filme</Link>
                 {
-                    filmes ? <section className="mt-2 d-flex">
+                    filmes ? <section className="d-flex my-5 p-5 row mx-md-n5">
                         {filmes.map( (filme) => {
                         return <CardFilme 
                             id={filme.id}
@@ -86,6 +86,7 @@ function Filmes(){
                 }
             </Container>
         </main>
+        <Rodape></Rodape>
     </>
   )
 }

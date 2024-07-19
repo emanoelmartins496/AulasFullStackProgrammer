@@ -5,7 +5,7 @@ import "..//Styles/Rodape.css"
 function Rodape() {
     return (
         <footer className="rodape">
-          <Navbar bg="warning" variant="warning" expand="lg" >
+          <Navbar bg="dark" variant="dark" expand="lg" >
             <Container>
 
               <Navbar.Toggle />
