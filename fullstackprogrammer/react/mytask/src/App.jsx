@@ -6,7 +6,7 @@ import Ajuda from "./Pages/Ajuda";
 import Politicas from "./Pages/Politicas";
 import NotFound from "./Pages/NotFound";
 import Rodape from "./Components/Rodape";
-import Tarefas from "./Pages/Tarefas";
+import filmes from "./Pages/filmes";
 import EditarTarefa from "./Pages/EditarTarefa";
 import NovaTarefa from "./Pages/NovaTarefa";
 import {Toaster} from "react-hot-toast";
@@ -45,9 +45,9 @@ function App() {
             <Route path="/login" element={<Login  />} />
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/ajuda" element={<Ajuda />} />
-            <Route path="/tarefas" element={<Tarefas />} />
-            <Route path="/tarefas/adicionar" element={<NovaTarefa />} />
-            <Route path="/tarefas/editar/:id" element={<EditarTarefa/>}/>
+            <Route path="/filmes" element={<filmes />} />
+            <Route path="/filmes/adicionar" element={<NovaTarefa />} />
+            <Route path="/filmes/editar/:id" element={<EditarTarefa/>}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

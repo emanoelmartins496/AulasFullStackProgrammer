@@ -1,25 +1,23 @@
-import { Link, useNavigate } from "react-router-dom";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import { toast } from "react-hot-toast";
-import { logout } from "../firebase/auth";
-import { useContext } from "react";
-import { UsuarioContext } from "../contexts/UsuarioContexts";
-// Link: este componente habilita o SPA (Single-Page Application)
-// Obs: Se houver links externos utilize a tag <a />
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { Navbar, Container, Nav, Button } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
+import { logout } from '../../firebase/auth'
+import { UsuarioContext } from '../../contexts/UsuarioContext'
 
-function Menu() {
-    const usuario = useContext(UsuarioContext);
-    const navigate=useNavigate();
+const Header = () => {
+  const usuario = useContext(UsuarioContext)
+  const navigate = useNavigate();
 
-    function handleLogout() {
-        logout().then(() => {
-            toast.success("Você foi deslogado!")
-            navigate("/login");
-        });
-    }
+  function handleLogout(){
+    logout().then( ()=> {
+      navigate("/")
+    })
+  }
 
-    return (
-        <header>
+  return (
+    <header>
+<header>
             <Navbar bg="warning" variant="warning" expand="md">
                 <Container fluid>
                     <Link to="/login">
@@ -28,7 +26,7 @@ function Menu() {
                     <Navbar.Toggle />
                     <Navbar.Collapse>
                     <Nav className="ms-auto">
-                            {usuario && <Link className="nav-link" to="/tarefas">Tarefas</Link>}
+                            {usuario && <Link className="nav-link" to="/filmes">filmes</Link>}
                             {!usuario && <Link className="nav-link" to="/login">Login</Link>}
                             {!usuario && <Link className="nav-link" to="/cadastro">Cadastro</Link>}
                             <Link className="nav-link" to="/ajuda">Ajuda</Link>
@@ -41,7 +39,8 @@ function Menu() {
                 </Container>
             </Navbar>
         </header>
-    );
+    </header>
+  )
 }
 
-export default Menu;
+export default Header

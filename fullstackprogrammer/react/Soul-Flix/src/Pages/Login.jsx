@@ -17,7 +17,7 @@ function Login() {
   function entrar(data) {
     loginUsuario(data.email, data.senha).then(() => {
       toast.success("Bem-vindo(a)!");
-      navigate("/tarefas");
+      navigate("/filmes");
     }).catch(() => {
       toast.error("Email e/ou senha incorreta!");
     });
@@ -26,7 +26,7 @@ function Login() {
   function handleEntrarGoogle() {
     entrarGoogle().then(() => {
       toast.success("Bem-vindo (a)!");
-      navigate("/tarefas");
+      navigate("/filmes");
     });
   }
 

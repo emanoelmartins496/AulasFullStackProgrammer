@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { useNavigate, useParams, Navigate } from "react-router-dom";
-import { getTarefa, updateTarefa } from "../firebase/tarefas";
+import { getTarefa, updateTarefa } from "../firebase/filmes";
 import { useEffect } from "react";
 import { useContext } from "react";
 import { UsuarioContext } from "../contexts/UsuarioContexts";
@@ -27,8 +27,8 @@ function EditarTarefa() {
       if(tarefa) { // se existir a tarefa
         reset(tarefa);
       } else {
-        // se não existe tarefas, volta para a página de listagem
-        navigate("/tarefas");
+        // se não existe filmes, volta para a página de listagem
+        navigate("/filmes");
       }
     });
   }
@@ -37,7 +37,7 @@ function EditarTarefa() {
   function atualizarTarefa(data) {
     updateTarefa(id, data).then(() => {
       toast.success("Tarefa atualizada com sucesso");
-      navigate("/tarefas");
+      navigate("/filmes");
     });
   }
 

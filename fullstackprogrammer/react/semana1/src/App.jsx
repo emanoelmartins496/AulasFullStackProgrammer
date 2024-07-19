@@ -4,15 +4,15 @@
 // Declarativa
 // Açucar sintático
 
-// import Rodape from "./components/Rodape";
-// import Blog from "./components/Blog";
-// import Mensagem from "./components/Mensagem";
-// import Navbar from "./components/Navbar";
-// import CardAluno from "./components/CardAluno";
-// import CardProduto from "./components/CardProduto";
-// import Listagem from "./components/Listagem";
-import CalculadoraIMC from "./components/CalculadoraIMC";
-import Carrossel from "./components/Carrossel";
+// import Rodape from "./Components/Rodape";
+// import Blog from "./Components/Blog";
+// import Mensagem from "./Components/Mensagem";
+// import Navbar from "./Components/Navbar";
+// import CardAluno from "./Components/CardAluno";
+// import CardProduto from "./Components/CardProduto";
+// import Listagem from "./Components/Listagem";
+import CalculadoraIMC from "./Components/CalculadoraIMC";
+import Carrossel from "./Components/Carrossel";
 
 // Componente principal da aplicação
 function App() {

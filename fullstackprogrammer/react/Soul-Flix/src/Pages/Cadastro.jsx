@@ -16,7 +16,7 @@ function Cadastro() {
     cadastrarUsuario(data.nome, data.email, data.senha)
       .then(() => {
         toast.success(`Bem-vindo(a)! ${data.nome}`);
-        navigate("/tarefas");
+        navigate("/filmes");
       })
       .catch((error) => {
         toast.error("Um erro aconteceu: " + error.code);
@@ -26,7 +26,7 @@ function Cadastro() {
   function handleEntrarGoogle() {
     entrarGoogle().then(() => {
       toast.success("Bem-vindo(a)!");
-      navigate("/tarefas");
+      navigate("/filmes");
     });
   }
 

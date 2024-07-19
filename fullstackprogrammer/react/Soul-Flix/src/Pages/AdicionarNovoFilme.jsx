@@ -1,27 +1,27 @@
 import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { addTarefa } from "../firebase/filmes";
+import { addFilme } from "../firebase/filmes";
 import toast from "react-hot-toast";
-import { useNavigate, Navigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { UsuarioContext } from "../contexts/UsuarioContexts";
+import { UsuarioContext } from "../contexts/UsuarioContext";
+import Header from "../Components/header/Header";
 
-function NovaTarefa() {
+function AdicionarNovoFilme() {
+  const usuario = useContext(UsuarioContext)
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const usuario = useContext(UsuarioContext);
-
   const navigate = useNavigate();
-  function salvarTarefa(data) {
 
-    data.idUsuario = usuario.uid;
+  function salvarTarefa(data) {
     // Os dados do formulário são passados para a função de inserir
     // Then => aguarda a inserção da tarefa para então exibir o toast
-    addTarefa(data)
+    data.idUsuario = usuario.uid
+    addFilme(data)
       .then(() => {
         toast.success("Tarefa adicionada com sucesso!");
         // Redirecionar o usuário para /filmes
@@ -32,20 +32,19 @@ function NovaTarefa() {
       });
   }
 
-  if(usuario === null) {
-
-    return <Navigate to="/login" />;
-
+  if(usuario === null){
+    return <Navigate to="/login"/>
   }
 
-
   return (
+    <>
+    <Header></Header>
     <main>
       <form className="form-section" onSubmit={handleSubmit(salvarTarefa)}>
-        <h1>Adicionar tarefa</h1>
+        <h1>Adicionar Filme</h1>
         <hr />
         <div>
-          <label htmlFor="titulo">Título</label>
+          <label htmlFor="titulo">Título do filme</label>
           <input
             type="text"
             id="titulo"
@@ -53,18 +52,18 @@ function NovaTarefa() {
             {...register("titulo", { required: true, maxLength: 200 })}
           />
           {errors.titulo && (
-            <small className="invalid">O título é inválido!</small>
+            <small className="invalid">Campo obrigatório</small>
           )}
         </div>
         <div>
-          <label htmlFor="descricao">Descrição</label>
+          <label htmlFor="descricao">Descrição do filme</label>
           <textarea
             id="descricao"
             className="form-control"
             {...register("descricao", { required: true })}
           ></textarea>
           {errors.descricao && (
-            <small className="invalid">A descrição é inválida!</small>
+            <small className="invalid">Campo obrigatório</small>
           )}
         </div>
         <div>
@@ -79,34 +78,37 @@ function NovaTarefa() {
         <div className="form-check">
           <input
             type="checkbox"
-            id="concluido"
+            id="assistido"
             className="form-check-input"
-            {...register("concluido")}
+            {...register("assistido")}
           />
           <label htmlFor="concluido" className="form-check-label">
-            Concluído?
+            Assistido?
           </label>
         </div>
         <div>
-          <label htmlFor="categoria">Categoria</label>
+          <label htmlFor="categoria">Gênero</label>
           <select
-            id="categoria"
+            id="genero"
             className="form-select"
-            {...register("categoria")}
+            {...register("genero")}
           >
-            <option value="Trabalho">Trabalho</option>
-            <option value="Estudos">Estudos</option>
-            <option value="Projetos">Projetos</option>
-            <option value="Lazer">Lazer</option>
-            <option value="Outros">Outros</option>
+            <option value="acao">Ação</option>
+            <option value="drama">Drama</option>
+            <option value="comedia">Comédia</option>
+            <option value="ficcao">Ficção Científica</option>
+            <option value="terror">Terror</option>
+            <option value="outros">Outros</option>
           </select>
         </div>
         <Button variant="dark" className="w-100 mt-1" type="submit">
-          Salvar Tarefa
+          Salvar filme
         </Button>
       </form>
     </main>
+    </>
   );
 }
 
-export default NovaTarefa;
+export default AdicionarNovoFilme;
+

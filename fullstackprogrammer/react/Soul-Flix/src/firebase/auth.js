@@ -1,9 +1,4 @@
-// O objetivo deste arquivo é ter
-// todas as funções relacionadas a autenticação
-// criar usuario com email/senha/nome
-// entrar com google
-// entrar com email/senha
-// logout
+
 import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { auth } from "./config";
 

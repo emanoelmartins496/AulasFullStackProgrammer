@@ -4,20 +4,20 @@
 // Declarativa
 // Açucar sintático
 
-import Cabecalho from "./components/Cabecalho";
-import Banner from "./components/Banner/Banner";
-import Blog from "./components/Blog";
-import Rodape from "./components/Rodape";
-import Mensagem from "./components/Mensagem";
-import CardAluno from "./components/CardAluno";
-import Galeria from "./components/Galeria";
-import Listagem from "./components/Listagem";
-import Eventos from "./components/Eventos";
-import Contador from "./components/Contador";
-import Abas from "./components/Abas"
-import Carrossel from "./components/Carrossel";
-import CalculadoraIMC from "./components/CalculadoraIMC";
-import Post from "./components/Post";
+import Cabecalho from "./Components/Cabecalho";
+import Banner from "./Components/Banner/Banner";
+import Blog from "./Components/Blog";
+import Rodape from "./Components/Rodape";
+import Mensagem from "./Components/Mensagem";
+import CardAluno from "./Components/CardAluno";
+import Galeria from "./Components/Galeria";
+import Listagem from "./Components/Listagem";
+import Eventos from "./Components/Eventos";
+import Contador from "./Components/Contador";
+import Abas from "./Components/Abas"
+import Carrossel from "./Components/Carrossel";
+import CalculadoraIMC from "./Components/CalculadoraIMC";
+import Post from "./Components/Post";
 
 
 // Componente principal da aplicação
