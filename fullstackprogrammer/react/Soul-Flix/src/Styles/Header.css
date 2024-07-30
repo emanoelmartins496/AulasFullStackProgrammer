@@ -16,6 +16,9 @@
     line-height: 1.5;
     border-radius: 0.5rem;
     border-color: #ffd900;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffd900;
 }
 
 .button:hover {
@@ -29,3 +32,12 @@
     outline: 0;
     box-shadow: 0 0 0 0.2rem #ffd900;
 }
+
+
+.fotodeperfil {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    border: 2px solid yellow; /* Adiciona a borda amarela */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem preencha a caixa sem distorcer */
+  }

@@ -34,8 +34,12 @@
   }
   
   .invalid {
+    display: block;
     color: red;
     font-size: 12px;
+    margin-top: -10px; /* Ajuste este valor conforme necessário */
+    margin-left: 5px; /* Ajuste este valor conforme necessário */
+    padding-bottom: 25px;
   }
   
   button {
