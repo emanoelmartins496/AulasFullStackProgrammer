@@ -1,0 +1,14 @@
+.preview{
+    border: 1px dashed rgb(209, 202, 202);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-position: top left;
+    aspect-ratio: 2/1;
+}
+.preview img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 2/1;
+}

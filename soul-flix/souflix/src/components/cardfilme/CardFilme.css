@@ -1,0 +1,18 @@
+.padding{
+    border: none;
+    padding: 7px 10px;
+}
+.image-card{
+    object-fit: cover;
+    aspect-ratio: 16/9;   
+}
+.display-block{
+    display: block;
+    padding: 5px;
+    width: fit-content;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.flex-1{
+    flex: 1;
+}

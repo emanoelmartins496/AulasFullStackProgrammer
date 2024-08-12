@@ -1,0 +1,68 @@
+.login-container {
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-logo{
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  
+  .form-section h1 {
+    margin: 0;
+    padding: 5x 0;
+    color: #171c30;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .form-section h1:after{
+    display: block;
+    content: "";
+    width: 20px;
+    padding: 1px;
+    background-color: #171c30;
+  }
+  
+  .form-control {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .is-invalid {
+    border-color: red;
+  }
+  
+  .invalid {
+    color: red;
+    font-size: 12px;
+  }
+  
+  button {
+    font-size: 16px;
+  }
+  
+  p {
+    margin-top: 5px;
+  }
+  
+  a {
+    color: #171c30;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .mt-3 {
+    margin-top: 15px;
+  }
+  
+  .w-100 {
+    width: 100%;
+  }

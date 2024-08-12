@@ -1,0 +1,106 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body{
+    background-color: #07151A;
+    font-family: "Manrope", sans-serif
+}
+a{
+    text-decoration: none;
+}
+main {
+    min-height: calc(100vh - 112px);
+}
+.logo{
+    width: 150px;
+}
+
+/*Form*/
+.form-section {
+    margin: 5px auto;
+}
+
+/*cores*/
+.bg-preto-s{
+    background-color: rgb(0, 0, 0);
+}
+.bg-vermelho-s{
+    background-color: rgb(221, 98, 98);
+}
+.bg-amarelo-s{
+    background-color: rgb(255, 217, 0)
+}
+.font-amarelo-s{
+    color: rgb(255, 217, 0)
+}
+.font-branco-s{
+    color: rgb(255, 255, 255);
+}
+.font-preto-s{
+    color: #000;
+}
+
+/*Tamanho font*/
+.font-titulo-s{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/*cores background*/
+.bg-s{
+    background-color: #07151A;
+}
+.bg-card-s{
+    background-color: #0f2730; 
+}
+
+/*Divisor barra <hr/>*/
+hr{
+    border: 1px solid rgb(255, 217, 0);
+}
+
+
+
+/*estilo botão*/
+.botao-amarelo-s{
+    border-radius: .5rem;
+    color: black;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.botao-amarelo-s:hover{
+    filter: brightness(.5);
+}
+.botao-vermelho-s{
+    background-color: rgb(194, 77, 77);
+    border-radius: .5rem;
+    color: black;
+    margin: 8px;
+    transition: all .2s ease;
+}
+.botao-vermelho-s:hover{
+    filter: brightness(.5);
+}
+
+.botao-azul-s{
+    background-color: #07151A;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 0;
+    transition: all .3s ease;
+
+}
+.botao-azul-s:hover{
+    background-color: #193c49;
+}
+
+.box-logo{
+    display: flex;
+    justify-content: center;
+  }
+.avatar{
+    width: 50px;
+    border-radius: 50%;
+}
+
+

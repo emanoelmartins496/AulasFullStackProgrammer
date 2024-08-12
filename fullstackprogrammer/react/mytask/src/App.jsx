@@ -45,7 +45,6 @@ function App() {
             <Route path="/login" element={<Login  />} />
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/ajuda" element={<Ajuda />} />
-            <Route path="/filmes" element={<filmes />} />
             <Route path="/filmes/adicionar" element={<NovaTarefa />} />
             <Route path="/filmes/editar/:id" element={<EditarTarefa/>}/>
             <Route path="*" element={<NotFound />} />
